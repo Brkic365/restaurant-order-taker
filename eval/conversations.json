@@ -1,0 +1,29 @@
+[
+  {"name": "add then remove", "turns": [
+    {"text": "dvije margarite", "items": {"margarita": 2}},
+    {"text": "i jednu colu", "items": {"margarita": 2, "coca_cola": 1}},
+    {"text": "ipak bez cole", "items": {"margarita": 2}}
+  ]},
+  {"name": "change quantity", "turns": [
+    {"text": "jednu diavolu i dva piva", "items": {"diavola": 1, "pivo": 2}},
+    {"text": "neka budu tri piva", "items": {"diavola": 1, "pivo": 3}}
+  ]},
+  {"name": "question mid-call", "turns": [
+    {"text": "jednu kapričozu", "items": {"capricciosa": 1}},
+    {"text": "imate li nešto bez mesa?", "items": {"capricciosa": 1}, "suggestions": ["margarita", "vegetariana", "quattro_formaggi", "mijesana_salata"]},
+    {"text": "onda još jednu vegetarijanu", "items": {"capricciosa": 1, "vegetariana": 1}}
+  ]},
+  {"name": "swap item", "turns": [
+    {"text": "dvije cole i miješanu salatu", "items": {"coca_cola": 2, "mijesana_salata": 1}},
+    {"text": "umjesto cola neka budu dvije mineralne", "items": {"mineralna_voda": 2, "mijesana_salata": 1}}
+  ]},
+  {"name": "unavailable mid-call", "turns": [
+    {"text": "jednu quattro formaggi", "items": {"quattro_formaggi": 1}},
+    {"text": "i jedan hamburger", "items": {"quattro_formaggi": 1}, "unavailable": {"hamburger": 1}},
+    {"text": "dobro, onda jednu cezar salatu", "items": {"quattro_formaggi": 1, "cezar_salata": 1}}
+  ]},
+  {"name": "thanks at the end", "turns": [
+    {"text": "margaritu i pivo", "items": {"margarita": 1, "pivo": 1}},
+    {"text": "to je sve, hvala", "items": {"margarita": 1, "pivo": 1}}
+  ]}
+]
